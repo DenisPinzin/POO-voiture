@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        $clio = new Voiture ('verte', 5);
+        $clio = new Voiture ('verte', 5, 20, 18);
         $mustang = new Voiture ();
 
         // $mustang -> couleur = 'noir';
@@ -22,7 +22,7 @@
 
         $clio -> setCouleur('rouge');
 
-        echo '<p>Ma voiture est '.$clio -> getCouleur().' et elle a '.$clio -> getNbPortes().' portes, elle pourra roulais '.$clio -> getKilometre().'</p>';
+        echo '<p>Ma voiture est '.$clio -> getCouleur().' et elle a '.$clio -> getNbPortes().' portes, elle pourra roulais '.$clio -> getKilometre().'Km et à un reservoir de '.$clio -> getEssence().'litres</p>';
         // echo '<p>Ma voiture est '.$mustang -> couleur.' et elle a '.$mustang -> nbPortes.' portes.</p>';
 
 

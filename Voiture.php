@@ -5,6 +5,7 @@ class Voiture {
     private $couleur;
     private $nbPortes;
     private $kilometre;
+    private $essence;
 
     //Définir une fonction
     public function rouler(){
@@ -12,10 +13,11 @@ class Voiture {
     }
 
     //Va définir des valeurs par défaut dans les parenthese de l'autre page
-    public function __construct($couleur='blanche', $nbPortes=3, $kilometre=50) {
+    public function __construct($couleur='blanche', $nbPortes=3, $kilometre=50, $essence=30) {
         $this-> couleur = $couleur;
         $this-> nbPortes = $nbPortes;
         $this-> kilometre = $kilometre;
+        $this-> essence = $essence;
     }
 
     //GETTER
@@ -29,6 +31,10 @@ class Voiture {
 
     public function getKilometre(){
         return  $this->kilometre;
+    }
+
+    public function getEssence(){
+        return  $this->essence;
     }
 
     //SETTER
