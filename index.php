@@ -9,22 +9,21 @@
 </head>
 <body>
     <?php
-        $clio = new Voiture ('verte', 5, 20, 18);
-        $mustang = new Voiture ();
+        $clio = new Voiture();
 
-        // $mustang -> couleur = 'noir';
+        $clio = new Voiture(120, 20, "on", 45);
 
-        // $clio -> couleur = 'rouge';
-        // $clio -> nbPortes = 5;
-        // $clio -> rouler();
+        $clio -> rouler(1000);
+        $clio -> allumerPhares();
+        $clio -> eteindrePhares();
+        $clio -> tableauDeBord();
 
-        // $mustang -> rouler();
+        echo'<br>';
 
-        $clio -> setCouleur('rouge');
-
-        echo '<p>Ma voiture est '.$clio -> getCouleur().' et elle a '.$clio -> getNbPortes().' portes, elle pourra roulais '.$clio -> getKilometre().'Km et à un reservoir de '.$clio -> getEssence().'litres</p>';
-        // echo '<p>Ma voiture est '.$mustang -> couleur.' et elle a '.$mustang -> nbPortes.' portes.</p>';
-
+        $clio -> allumerPhares();
+        $clio -> faireLePlein();
+        $clio -> rouler(100);
+        $clio -> tableauDeBord();
 
     ?>
 </body>
